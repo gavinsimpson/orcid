@@ -19,7 +19,8 @@
 ##' @author Gavin L. Simpson
 ##'
 ##' @examples
-##' orcidWorks("0000-0002-9084-8413")$identifiers
+##' ids <- orcidWorks("0000-0002-9084-8413")
+##' ids
 ##'
 ##' @importFrom RCurl getURL
 ##' @importFrom RJSONIO fromJSON

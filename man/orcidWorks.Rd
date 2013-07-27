@@ -10,9 +10,11 @@
 \value{
   a list with components
 
-  \describe{ \item{identifiers}{data frame; Orcid Work
-  Identifier types and their values, typically DOIs.}
-  \item{works}{list; raw metadata from the parsed JSON.} }
+  \describe{ \item{orcid}{character; the orcid.}
+  \item{identifiers}{data frame; Orcid Work Identifier
+  types and their identifiers, typically DOIs.}
+  \item{works}{list; raw metadata from the parsed JSON.}
+  \item{retrieved}{time and date of metadata retrieval.} }
 }
 \description{
   Returns the metadata for author works associated with an
@@ -20,7 +22,8 @@
   provided when authors claim works in Orcid.
 }
 \examples{
-orcidWorks(0000-0002-9084-8413)$identifiers
+ids <- orcidWorks("0000-0002-9084-8413")
+ids
 }
 \author{
   Gavin L. Simpson
