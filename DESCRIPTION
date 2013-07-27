@@ -1,0 +1,16 @@
+Package: orcid
+Type: Package
+Title: Miscellaneous functions for retrieving data from Orcid
+Version: 0.0-1
+Date: 2013-07-27
+Imports:
+    RCurl,
+    RJSONIO
+Author: Gavin L. Simpson
+Maintainer: Gavin L. Simpson <gavin.simpson@uregina.ca>
+Description: Fits Modern Analogue Technique and Weighted Averaging transfer
+    function models for prediction of environmental data from species
+    data, and related methods used in palaeoecology.
+License: GPL-2
+Collate:
+    'orcidWorks.R'
