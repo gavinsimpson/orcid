@@ -11,6 +11,9 @@ Maintainer: Gavin L. Simpson <gavin.simpson@uregina.ca>
 Description: Fits Modern Analogue Technique and Weighted Averaging transfer
     function models for prediction of environmental data from species
     data, and related methods used in palaeoecology.
-License: GPL-2
+License: MIT
 Collate:
     'orcidWorks.R'
+    'crossrefDOI.R'
+    'bibFromDOI.R'
+    'renderDOI.R'
