@@ -15,5 +15,5 @@ License: MIT
 Collate:
     'orcidWorks.R'
     'crossrefDOI.R'
-    'bibFromDOI.R'
     'renderDOI.R'
+    'fromDOI.R'

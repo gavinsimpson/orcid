@@ -1,3 +1,4 @@
+export(crossrefDOI)
 export(fromDOI)
 export(orcidWorks)
 export(renderDOI)
