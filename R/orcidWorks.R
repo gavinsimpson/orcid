@@ -40,13 +40,14 @@
     idents <- lapply(idents, unlist)
     idents <- do.call(rbind.data.frame, idents)
     names(idents) <- c("Type", "Identifier")
-    idents$Value <- sub("http://dx.doi.org/", "", idents$Value)
+    idents$Identifier <- sub("http://dx.doi.org/", "", idents$Identifier)
     out <- list(orcid = orcid, identifiers = idents, works = works,
                 retrieved = tstamp)
     class(out) <- "orcidWorks"
     out
 }
 
+##' @S3method print orcidWorks
 `print.orcidWorks` <- function(x, ...) {
     cat("\n")
     writeLines(strwrap(paste("Orcid Works identifiers for", x$orcid),
