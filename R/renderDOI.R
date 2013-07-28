@@ -31,7 +31,7 @@
     accept = paste0("text/x-bibliography; style=", csl)
 
     if (verbose) {
-        pb <- txtProgressBar(min = 0, max = length(x), style = 3, file = "")
+        pb <- txtProgressBar(min = 0, max = length(x), style = 3)
         on.exit(close(pb))
     }
     for (i in seq_along(x)) {
