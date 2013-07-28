@@ -1,3 +1,6 @@
+export(fromDOI)
 export(orcidWorks)
+export(renderDOI)
 importFrom(RCurl,getURL)
 importFrom(RJSONIO,fromJSON)
+S3method(print,orcidWorks)
