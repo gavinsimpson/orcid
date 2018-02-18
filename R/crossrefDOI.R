@@ -96,7 +96,7 @@ parseCoinsArticle <- function(text, ...) {
         out$doi <- if(grep("doi", text[want])) {
             doi <- sub("^rft_id=", "", URLdecode(text[want]))
             doi <- sub(re, "\\1", doi)
-            sub("http://dx.doi.org/", "", doi, fixed = TRUE)
+            sub("https?://(dx\\.)?doi.org/", "", doi)
         } else {
             NA
         }
